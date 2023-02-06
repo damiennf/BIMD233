@@ -1,0 +1,40 @@
+$aspect-ratio: 16/9;
+
+//Change the flag-height and compile to change the scale of the flag.
+//(Sidenote, VSCode doesn't use <!-- --> for HTML comments, not sure why. Hopefully this isn't an issue.)
+$flag-height: 400px;
+
+$stripe-height: $flag-height / 13;
+$flag-width: $flag-height * $aspect-ratio;
+$star-cell-width: $flag-width / 3;
+
+#starcell {
+  background-color:blue;
+  width: $star-cell-width;
+}
+
+#stars {
+  color:white;
+  width: $star-cell-width;
+  height: $stripe-height * 7;
+  tr {
+    td {
+      font-size: $stripe-height / 2;
+    }
+  }
+}
+
+#flag {
+  border-collapse: collapse;
+  aspect-ratio: $aspect-ratio;
+}
+
+.red_stripe {
+  background-color: red;
+}
+
+.stripes {
+  border-spacing: 0;
+  width: $flag-width - ($star-cell-width);
+  height: $stripe-height;
+}

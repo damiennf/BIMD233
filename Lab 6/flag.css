@@ -1,0 +1,24 @@
+#starcell {
+    background-color: blue;
+    width: 237.037037037px;
+}
+#stars {
+    color: white;
+    width: 237.037037037px;
+    height: 215.3846153846px;
+}
+#stars tr td {
+    font-size: 15.3846153846px;
+}
+#flag {
+    border-collapse: collapse;
+    aspect-ratio: 1.7777777778;
+}
+.red_stripe {
+    background-color: red;
+}
+.stripes {
+    border-spacing: 0;
+    width: 474.0740740741px;
+    height: 30.7692307692px;
+}
