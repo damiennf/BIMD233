@@ -1,0 +1,286 @@
+/* TASK A.  Create a body border
+   Create a 100px wide border for the body using the color 
+   rgba(51, 0, 111, 0.6)
+   
+   Make all text in the document the grayish color:#505050.
+   
+   The maximum width of the document should be 800px, but nominally 80% 
+   with a 20px padding
+   
+   The margin should be 30px and set to auto scale with browser window size
+   
+   Hint: suggested fonts:  Ubuntu, adobe-garamond-pro 
+*/
+body {
+   border: 100px solid rgba(51, 0, 111, 0.6);
+   color: #505050;
+   max-width: 800px;
+   width: 80%;
+   padding: 20px;
+   margin: 30px auto;
+}
+
+
+
+/* TASK B.  Adjust paragraph font size
+   Set all paragraph font size to 1.2em of the root container
+*/
+
+p {
+   font-size: 1.2rem;
+}
+
+
+
+/* TASK C:  Create a horizontal line
+   Create a styled horizonal rule of 2px tall, but with a gray 
+   gradient fill from the right
+		end points: rgba(0, 0, 0, 0.1)
+		center rgba(0, 0, 0, 0.3)
+		
+   Hint: use special type of background image of 
+   background-image: linear-gradient 
+*/
+hr {
+   border: 0;
+   height: 2px;
+   background: linear-gradient(0.25turn, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+ }
+
+
+
+/* TASK D:  Adjust citation letter spacing
+   Wikipedia citation should
+		wider letter spacing of 0.1em, 
+		oblique font style 
+		smaller font size of 0.8em 
+*/
+.citation {
+   word-spacing: 0.1em;
+   font-style: oblique;
+   font-size: 0.8em;
+}
+
+
+
+/* TASK E:  Style footnotes
+   Make all footnotes superscript by 0.6em and blue
+   
+   Hint: use vertical-align: super 
+*/
+.footnote {
+   vertical-align: super;
+   font-size: 0.6em;
+   color: blue;
+}
+
+
+
+/* TASK F:  Format heading picture
+   Center align the head picture and all of its text
+   
+   Hint: text-align applies not only to text but all objects in the box
+*/
+.headpic {
+   text-align: center;
+}
+
+
+
+/* TASK G:  Size heading picture
+   Make the head picture image 90% of the container width 
+*/
+.headpic img {
+   width: 90%;
+}
+
+
+
+/* TASK H:  Style the figure caption  
+   Style the head picture figure caption 
+		letters spaced by 0.15em 
+		text size reduced to 0.8em 
+*/
+.headpic figcaption {
+   letter-spacing: 0.15em;
+   font-size: 0.8em;
+}
+
+
+
+/* TASK I:  Style intro reference paragraph
+   Give the introductory reference paragraph
+		a left border, using border-left
+		the same color as the background rgba(r,g,b, 0.6) 
+		offset the parapgraph from the left by 8 pixels using 
+		padding-left 
+*/
+p.intro {
+   border-left:rgba(51, 0, 111, 0.6);
+   padding-left: 8px;
+}
+
+
+
+/* TASK J:  Style the main heading  
+   Make the main heading
+		center aligned 
+		2.5 times the size of the normal <h1> by referencing 
+		the root size
+		remove all extraneous margin using margin: 0 auto;
+*/
+h1 {
+   text-align: center;
+   font-size: 5rem;
+   margin: 0 auto;
+}
+
+
+
+/* TASK K:  Transform heading capitalizations
+   For all h1 and h2	
+		use text-transform to capitalize them
+		make them the same color as the lavender theme color but 
+		10% darker (i.e. alpha= 0.6 + 0.1) 
+*/
+h1, h2 {
+   text-transform: capitalize;
+   color: rgba(51, 0, 111, 0.7);
+}
+
+
+
+/* TASK L:  Style the first character of the first paragraph
+   Make the first charactrer of paragraph 1 
+		twice the size (i.e. 2em) of all other p characters
+		same color as the h1 text 
+		bold 
+*/
+#para1::first-letter {
+   font-size: 2em;
+   color: rgba(51, 0, 111, 0.7);
+   font-weight: bold;
+}
+
+
+
+/* =======================COLOR SWATCH TABLE =================== */
+/* TASK M: Create a color-swatch table
+   Create a table of 4 swatch colors with 3 rows additional rows 
+   fpr the hex, rgb and hsl data.  
+   
+   Create a lightgray 2px border around this table and center it. 
+   
+   Hint: use margin-left: auto and margin-right: auto as a CSS trick for 
+   centering. 
+   
+   Use the san-serif font Calibri for all text in the color table.
+*/
+table.swatches {
+   border: 2px solid lightgray;
+   margin-left: auto;
+   margin-right: auto;
+   font: 1em "Calibri";
+}
+
+
+
+/* TASK N: Style the swatch table 
+   Make all swatch cells
+		160px wide 
+		center align all text in these table cells
+		
+   Draw a lightgray border of 2px around all swatch cells **except** 
+   for the color swatches 
+*/
+table.swatches td {
+   border: 2px solid lightgray;
+   width: 160px;
+   text-align: center;
+}
+
+
+
+/* TASK O: Make a table header row
+   Set the swatch table first row properties
+		50px tall
+		All text uppercase 
+		Slightly expanded text of 0.2em. 
+		
+		Hint: use text-transform and letter-spacing 
+*/
+tr:first-child {
+   height: 50px;
+   text-transform: uppercase;
+   letter-spacing: 0.2em;
+}
+
+
+
+/* TASK P: Style the table content
+   Set the four swatch cells to the following background colors: 
+		#e6e6fa
+		#b57edc
+		#9966cc
+		#4b2e83.  
+		
+	Set the text color to lightgray, except for the first cell, which should be black. 
+*/
+#lav1 {
+   background-color: #e6e6fa;
+   color: black;
+}
+
+#lav2 {
+   background-color: #b57edc;
+   color: lightgray;
+}
+
+#lav3 {
+   background-color: #9966cc;
+   color: lightgray;
+}
+
+#lav4 {
+   background-color: #4b2e83;
+   color: lightgray;
+}
+
+
+
+/* ================ PHOTO GALLERY ============== */
+/* TASK Q: Set the photo gallery location
+   Center the photo gallery 
+
+   Make a grid of 3 photos across (for full size views)
+   
+   Hint: temporarily turn on a border to see where the photos container is. 
+*/
+.photos {
+   text-align: center;
+   display: grid;
+   /* border: 1px solid black; */
+}
+
+
+
+/* TASK R: Create the photo grid
+   Create a grid of 3 across for 6 or 9 photos
+
+   Hint: one HTML table cell has been designed to enclose the 
+   whole grid, but use width of 30% and margin of 1.3% for the 
+   images to "float" them into a 3 picture wide grid  
+*/
+.photos img {
+   width: 30%;
+   margin: 1.3%;
+}
+
+
+
+/* TASK S: Style the photo gallery border
+   Wrap a thin light gray border around the photogallery 
+*/
+table#photos {
+   border: 2px solid lightgray;
+}
