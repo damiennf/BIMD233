@@ -1,0 +1,19 @@
+.container {
+    padding-top: 40px;
+}
+
+#carousel {
+    padding-top: 40px;
+}
+
+body {
+    background-color: #7A43B6!important;
+}
+
+.jumbotron-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+ }
