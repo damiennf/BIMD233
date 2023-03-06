@@ -1,0 +1,10 @@
+img {
+    width: 500px;
+}
+
+#current-state {
+    position: absolute;
+    top: 200px;
+    left: 700px;
+    font-size: 30px;
+}
