@@ -1,0 +1,123 @@
+.padding-set {
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #333333;
+}
+
+.smaller-text {
+  font-size: 20px;
+}
+
+.midsize-text {
+  font-size: 40px;
+}
+
+.big-text {
+    font-size:60px;
+}
+
+.biggest-text {
+    font-size: 100px;
+}
+
+.text-start {
+    padding-left: 10px;
+}
+
+.btn-dark {
+    box-shadow:#333333;
+}
+
+.outer-container {
+    background-color: #171717;
+    border-radius: 30px;
+}
+
+.about-me-link:link {
+  color: #BF0000;
+  text-decoration: none;
+}
+.about-me-link:visited {
+  color: #BF0000;
+  text-decoration: none;
+}
+  
+.about-me-link:hover {
+  color: #BF0000;
+  text-decoration: underline;
+}
+
+.about-me-link:active {
+  color: #BF0000;
+  text-decoration: underline;
+}
+
+.padding-set-small {
+  padding: 5px;
+}
+
+.card-body {
+  background-color: #171717;
+  padding: 3px;
+}
+
+.header-image {
+  height: 40%;
+  width: 40%;
+}
+
+.scale-img {
+  width: 40%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+}
+
+.parent {
+  width: 80%;
+  background-image: url(../images/damienpic.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 140%;
+}
+
+.child {
+  position: relative;
+  top: 20%;
+  right: 6%;
+}
+
+.btn-primary, .btn-primary:active, .btn-primary:visited {
+  background-color: #333333 !important;
+  border: none !important;
+}
+
+.btn-primary:hover {
+  background-color: #BF0000 !important;
+  border: none !important;
+}
+
+#sticky-footer {
+  background-color: #171717 !important;
+  height: 70px !important;
+  align-items: center !important;
+}
+
+.footer-link, .footer-link:active, .footer-link:visited {
+  color:lightgray !important;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color:#BF0000 !important;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #BF0000 !important;
+}
